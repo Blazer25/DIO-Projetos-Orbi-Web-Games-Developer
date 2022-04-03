@@ -1,0 +1,62 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    /* CORES GENIUS */
+    --red: #ff0000;
+    --blue: #0000ff;
+    --yellow: #ffff00;
+    --green: #008000;
+}
+
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--black);
+}
+
+.mainContainer .genius {
+    display: grid;
+    grid-template-areas: 'vermelho azul' 'amarelo verde';
+    /*O espaço no meio cria as grades, torando cada bloco com seu espaço determinado*/
+    grid-gap: 15px;
+    border: 2px solid var(--black);
+    background: var(--white);
+    border-radius: 100%;
+    width: 650px;
+    height: 650px;
+}
+
+.mainContainer .genius .vermelho {
+    grid-area: vermelho;
+    background: var(--red);
+    border-radius: 100% 0% 0% 0%;
+    cursor: pointer;
+}
+
+.mainContainer .genius .azul {
+    grid-area: azul;
+    background: var(--blue);
+    border-radius: 0% 100% 0% 0%;
+    cursor: pointer;
+}
+
+.mainContainer .genius .amarelo {
+    grid-area: amarelo;
+    background: var(--yellow);
+    border-radius: 0% 0% 0% 100%;
+    cursor: pointer;
+}
+
+.mainContainer .genius .verde {
+    grid-area: verde;
+    background: var(--green);
+    border-radius: 0% 0% 100% 0%;
+    cursor: pointer;
+}
+
+.selecionado {
+    opacity: .3;
+}
