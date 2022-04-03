@@ -27,7 +27,6 @@ function embaralhaOrdem() {
         let corElementar = criarCorElementar(ordem[i])
         corClara(corElementar, Number(i) + 1)
     }
-
 }
 
 //Responsável por acender a próxima cor
