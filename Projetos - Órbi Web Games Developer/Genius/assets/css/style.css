@@ -16,16 +16,42 @@ body {
 /* NAVBAR */
 
 nav {
-    width: 100vw;
+    width: 25vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-nav p .textoNav {
+.saibaClass {
+    display: none;
+}
+
+.saibaClass .apresentaJogo {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--black);
+    border: 3px solid var(--white);
+    flex-wrap: wrap;
+}
+
+.saibaClass .apresentaJogo .textoSobre {
+    font-size: 25px;
     color: var(--white);
+    text-align: center;
+}
+
+nav p .btnSaiba {
+    color: var(--black);
+    background: var(--white);
     font-size: 25px;
     font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 
