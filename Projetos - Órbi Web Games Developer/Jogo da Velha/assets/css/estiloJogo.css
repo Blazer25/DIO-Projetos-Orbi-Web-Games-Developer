@@ -1,0 +1,53 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+}
+
+body {
+    background: var(--black);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container .tituloJogo {
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.container .quadrado {
+    width: 120px;
+    display: inline-block;
+    height: 120px;
+    background: var(--white);
+    color: var(--white);
+    margin: 10px;
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.container .textoVencedor,
+.container .textoJogador {
+    color: var(--white);
+    font-size: 25px;
+}
+
+.container .botaoIniciar {
+    background-color: var(--black);
+    color: var(--white);
+    border: 5px solid var(--white);
+    font-size: 20px;
+    font-weight: 800;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+}
