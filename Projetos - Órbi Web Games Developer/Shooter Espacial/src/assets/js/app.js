@@ -4,13 +4,14 @@ const imgInimigos = ['src/img/monster-1.png', 'src/img/monster-2.png', 'src/img/
 const instrucoesJogo = document.querySelector('.game-instructions');
 const btnIniciar = document.querySelector('.start-button');
 let intervaloAlien;
-import ('../img/')
+let contador = 0
+let contadorInimigos = 0
 
 function FazerNaveVoar(e) {
-    if (e.key === 'ArrowUp') {
+    if (e.key === 'ArrowUp' || e.key === 'w') {
         e.preventDefault();
         VoarParaCima();
-    } else if (e.key === 'ArrowDown') {
+    } else if (e.key === 'ArrowDown' || e.key === 's') {
         e.preventDefault();
         VoarParaBaixo();
     } else if (e.key === " ") {
@@ -45,6 +46,10 @@ function Atirar() {
     let laser = CriarElementoTiroLaser();
     areaJogavel.appendChild(laser);
     moveLaser(laser);
+    contador++
+
+    document.getElementById('tiros-dados').innerHTML = contador
+
 }
 
 function CriarElementoTiroLaser() {
@@ -68,6 +73,9 @@ function moveLaser(laser) {
                 alien.src = 'src/img/explosion.png';
                 alien.classList.remove('alien');
                 alien.classList.add('dead-alien');
+                contadorInimigos++
+
+                document.getElementById('inimigos-mortos').innerHTML = contadorInimigos
             }
         })
 
@@ -150,5 +158,6 @@ function FimDoJogo() {
         naveJogador.style.top = "250px";
         btnIniciar.style.display = "block";
         instrucoesJogo.style.display = "block";
+        window.location.href = 'index.html'
     });
 }
