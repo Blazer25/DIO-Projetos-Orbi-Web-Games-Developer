@@ -7,6 +7,7 @@
 <p>Genius - que é um jogo da memóra sequencial</p>
 <p>Jogo da Velha</p>
 <p>Space Shooter</p>
+<p>Jogo do Dinossauro</p>
 <hr/>
 
 
