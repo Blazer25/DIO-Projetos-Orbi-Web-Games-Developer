@@ -4,7 +4,7 @@
 <p>Aqui estão os projetos desenvolvidos no Bootcamp da Órbi Web Games na plataforma da Digital Innovation One - DIO. </p>
 
 <p># Os seguintes projetos foram realizados:</p>
-<p>Genius - que é um jogo da memóra sequencial</p>
+<p>Genius - que é um jogo da memória sequencial</p>
 <p>Jogo da Velha</p>
 <p>Space Shooter</p>
 <p>Jogo do Dinossauro</p>
